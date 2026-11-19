@@ -24,12 +24,12 @@
 .adl .adl-head .adl-ja{display:block; font-size:12px; color:#5b5d7a; margin-top:2px;}
 
 /* カラーごとの見出し */
-.adl h3.adl-color{
-  position:relative; margin:30px 0 10px; padding:10px 14px 10px 22px;
+.adl .adl-color{
+  display:block; position:relative; margin:30px 0 10px; padding:10px 14px 10px 22px;
   font-size:17px; font-weight:700; color:#232244;
   background:#ffe1ee; border-radius:999px;
 }
-.adl h3.adl-color:before{
+.adl .adl-color:before{
   content:""; position:absolute; left:10px; top:50%; width:6px; height:6px; margin-top:-3px;
   border-radius:50%; background:#ff4f96;
 }
@@ -40,7 +40,7 @@
   border:1px solid #e9e3f5; border-radius:12px; overflow:hidden; font-size:13px;
 }
 .adl table.adl-spec th,
-.adl table.adl-spec td{padding:9px 12px; border-bottom:1px solid #e9e3f5; text-align:left; vertical-align:top;}
+.adl table.adl-spec td{font-family:inherit; padding:9px 12px; border-bottom:1px solid #e9e3f5; text-align:left; vertical-align:top;}
 .adl table.adl-spec tr:last-child th,
 .adl table.adl-spec tr:last-child td{border-bottom:0;}
 .adl table.adl-spec th{width:34%; background:#f6f4ff; color:#5b5d7a; font-weight:500; white-space:nowrap;}
@@ -58,6 +58,6 @@
 
 @media (max-width:600px){
   .adl{font-size:13px;}
-  .adl h3.adl-color{font-size:15px;}
+  .adl .adl-color{font-size:15px;}
   .adl table.adl-spec th{white-space:normal;}
 }
