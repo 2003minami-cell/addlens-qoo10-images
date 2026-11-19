@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* ADD LENS - Qoo10 商品詳細用スタイル（add-lens.com のUIに合わせた配色・フォント） */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Baloo+2:wght@600;700&display=swap");
+
+.adl{
+  --adl-pink:#ff9ac4; --adl-pink-soft:#ffe1ee; --adl-pink-deep:#ff4f96;
+  --adl-navy:#232244; --adl-sub:#5b5d7a; --adl-lav:#e9e3f5; --adl-lav-bg:#f6f4ff;
+  max-width:800px; margin:0 auto; color:#232244; background:#fff;
+  font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  font-size:14px; line-height:1.8; letter-spacing:.02em;
+}
+.adl img{display:block; width:100%; max-width:800px; height:auto; margin:0 auto; border:0;}
+
+/* ブランド見出し帯 */
+.adl .adl-head{
+  margin:28px 0 8px; padding:14px 16px; text-align:center;
+  background:linear-gradient(90deg,#ffe1ee 0%,#f6f4ff 100%);
+  border-radius:14px;
+}
+.adl .adl-head .adl-en{
+  display:block; font-family:"Baloo 2","Zen Kaku Gothic New",sans-serif;
+  font-size:22px; font-weight:700; color:#ff4f96; letter-spacing:.06em; line-height:1.2;
+}
+.adl .adl-head .adl-ja{display:block; font-size:12px; color:#5b5d7a; margin-top:2px;}
+
+/* カラーごとの見出し */
+.adl h3.adl-color{
+  position:relative; margin:30px 0 10px; padding:10px 14px 10px 22px;
+  font-size:17px; font-weight:700; color:#232244;
+  background:#ffe1ee; border-radius:999px;
+}
+.adl h3.adl-color:before{
+  content:""; position:absolute; left:10px; top:50%; width:6px; height:6px; margin-top:-3px;
+  border-radius:50%; background:#ff4f96;
+}
+
+/* スペック表 */
+.adl table.adl-spec{
+  width:100%; border-collapse:separate; border-spacing:0; margin:0 0 6px;
+  border:1px solid #e9e3f5; border-radius:12px; overflow:hidden; font-size:13px;
+}
+.adl table.adl-spec th,
+.adl table.adl-spec td{padding:9px 12px; border-bottom:1px solid #e9e3f5; text-align:left; vertical-align:top;}
+.adl table.adl-spec tr:last-child th,
+.adl table.adl-spec tr:last-child td{border-bottom:0;}
+.adl table.adl-spec th{width:34%; background:#f6f4ff; color:#5b5d7a; font-weight:500; white-space:nowrap;}
+.adl table.adl-spec td{background:#fff; color:#232244;}
+
+/* 注意事項・販売業者表示 */
+.adl .adl-note{
+  margin:28px 0 10px; padding:14px 16px; font-size:12px; line-height:1.9; color:#5b5d7a;
+  background:#f6f4ff; border:1px solid #e9e3f5; border-radius:12px;
+}
+.adl .adl-shop{
+  margin:0 0 20px; padding:10px 14px; font-size:12px; color:#fff; text-align:center;
+  background:#ff4f96; border-radius:999px;
+}
+
+@media (max-width:600px){
+  .adl{font-size:13px;}
+  .adl h3.adl-color{font-size:15px;}
+  .adl table.adl-spec th{white-space:normal;}
+}
